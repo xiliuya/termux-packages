@@ -1,6 +1,6 @@
 TERMUX_PKG_HOMEPAGE=https://chawan.net/
 TERMUX_PKG_DESCRIPTION="TUI web (and (S)FTP, Gopher, Gemini, ...) browser with CSS, inline image and JavaScript support."
-TERMUX_PKG_LICENSE="UNLICENSE"
+TERMUX_PKG_LICENSE="Unlicense"
 TERMUX_PKG_MAINTAINER="@xiliuya"
 TERMUX_PKG_VERSION=0.3.2
 TERMUX_PKG_SRCURL=https://git.sr.ht/~bptato/chawan/archive/v${TERMUX_PKG_VERSION}.tar.gz
