@@ -15,4 +15,3 @@ termux_step_install_license() {
     mkdir -p "$TERMUX_PREFIX/share/doc/$TERMUX_PKG_NAME/"
     cp -af "$TERMUX_PKG_SRCDIR/UNLICENSE" "$TERMUX_PREFIX/share/doc/$TERMUX_PKG_NAME/copyright"
 }
-
