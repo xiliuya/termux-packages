@@ -72,17 +72,6 @@ termux_setup_nim() {
 		fi
 
 		return
-<<<<<<< HEAD
-=======
-	else
-
-		export CHOOSENIM_CHOOSE_VERSION=${TERMUX_NIM_VERSION}
-		curl https://nim-lang.org/choosenim/init.sh -sSf | bash -s -- -y
-		local NIM_PATH="$HOME/.nimble/bin"
-		export PATH=$NIM_PATH:$PATH
-		termux_setup_toolchain_gnu
-
->>>>>>> 9a09bd0768 (fix setup)
 	fi
 
 	echo "Package 'nim' is not installed."
