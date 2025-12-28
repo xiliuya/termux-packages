@@ -11,7 +11,7 @@ TERMUX_PKG_AUTO_UPDATE=true
 TERMUX_PKG_PLATFORM_INDEPENDENT=true
 
 
-termux_step_make() {
+termux_step_pre_configure() {
 	termux_setup_nim
 }
 termux_step_install_license() {
