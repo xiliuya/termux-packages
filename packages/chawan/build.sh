@@ -14,6 +14,9 @@ TERMUX_PKG_PLATFORM_INDEPENDENT=true
 termux_step_pre_configure() {
 	termux_setup_nim
 }
+termux_step_make() {
+	make $TERMUX_PKG_MAKE_PROCESSES FLAGS=--cc:clang --gcc.exe=${CC} --gcc.linkerexe=${CC}
+}
 termux_step_install_license() {
 	mkdir -p "$TERMUX_PREFIX/share/doc/$TERMUX_PKG_NAME/"
 	cp -af "$TERMUX_PKG_SRCDIR/UNLICENSE" "$TERMUX_PREFIX/share/doc/$TERMUX_PKG_NAME/copyright"
