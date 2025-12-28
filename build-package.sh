@@ -169,6 +169,10 @@ source "$TERMUX_SCRIPTDIR/scripts/build/setup/termux_setup_xmake.sh"
 # shellcheck source=scripts/build/setup/termux_setup_zig.sh
 source "$TERMUX_SCRIPTDIR/scripts/build/setup/termux_setup_zig.sh"
 
+# Utility function for nim-using packages to setup a nim toolchain.
+# shellcheck source=scripts/build/setup/termux_setup_nim.sh
+source "$TERMUX_SCRIPTDIR/scripts/build/setup/termux_setup_nim.sh"
+
 # Utility function to setup a current ninja build system.
 # shellcheck source=scripts/build/setup/termux_setup_ninja.sh
 source "$TERMUX_SCRIPTDIR/scripts/build/setup/termux_setup_ninja.sh"
