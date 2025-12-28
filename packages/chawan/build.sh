@@ -10,7 +10,13 @@ TERMUX_PKG_BUILD_IN_SRC=true
 TERMUX_PKG_AUTO_UPDATE=true
 TERMUX_PKG_PLATFORM_INDEPENDENT=true
 
-
+termux_step_pre_configure() {
+	termux_setup_toolchain_29
+	termux_setup_nim
+}
+termux_step_make() {
+	FLAGS=${NIM_FLAGS} make -j $TERMUX_PKG_MAKE_PROCESSES
+}
 termux_step_install_license() {
 	mkdir -p "$TERMUX_PREFIX/share/doc/$TERMUX_PKG_NAME/"
 	cp -af "$TERMUX_PKG_SRCDIR/UNLICENSE" "$TERMUX_PREFIX/share/doc/$TERMUX_PKG_NAME/copyright"
