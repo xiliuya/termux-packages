@@ -76,6 +76,14 @@ source "$TERMUX_SCRIPTDIR/scripts/build/termux_error_exit.sh"
 # shellcheck source=scripts/build/termux_download.sh
 source "$TERMUX_SCRIPTDIR/scripts/build/termux_download.sh"
 
+# Utility function to print package not find error message.
+# shellcheck source=scripts/build/termux_pkg_error.sh
+source "$TERMUX_SCRIPTDIR/scripts/build/termux_pkg_error.sh"
+
+# Utility function to ensure termux package is installed.
+# shellcheck source=scripts/build/termux_pkg_ensure.sh
+source "$TERMUX_SCRIPTDIR/scripts/build/termux_pkg_ensure.sh"
+
 # Utility function to run binaries under termux environment via proot.
 # shellcheck source=scripts/build/setup/termux_setup_proot.sh
 source "$TERMUX_SCRIPTDIR/scripts/build/setup/termux_setup_proot.sh"
