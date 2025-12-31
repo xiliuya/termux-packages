@@ -15,7 +15,7 @@ termux_step_pre_configure() {
 	termux_setup_nim
 }
 termux_step_make() {
-	FLAGS=" --cc:clang --clang.exe=${CC} --clang.linkerexe=${CC} --os:android " make -j $TERMUX_PKG_MAKE_PROCESSES
+	FLAGS=" ${NIM_FLAGS} " make -j $TERMUX_PKG_MAKE_PROCESSES
 }
 termux_step_install_license() {
 	mkdir -p "$TERMUX_PREFIX/share/doc/$TERMUX_PKG_NAME/"
